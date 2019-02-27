@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.peterwanghao.samples.springboot</groupId>
+    <artifactId>spring-boot-custom-starter</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>greeter-spring-boot-autoconfigure</artifactId>
+  <name>greeter-spring-boot-autoconfigure</name>
+  
+  <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring-boot.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.peterwanghao.samples.springboot</groupId>
+            <artifactId>greeter-library</artifactId>
+            <version>${greeter.version}</version>
+            <optional>true</optional>
+        </dependency>
+        
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<version>1.5.10.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+
+    </dependencies>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
+        <greeter.version>0.0.1-SNAPSHOT</greeter.version>
+        
+    </properties>
+</project>
