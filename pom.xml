@@ -12,6 +12,7 @@
 		<module>parent-boot-2</module>
 		<module>spring-boot-autoconfiguration</module>
 		<module>spring-boot-custom-starter</module>
+		<module>spring-security-oauth2</module>
 	</modules>
 
 	<dependencies>
