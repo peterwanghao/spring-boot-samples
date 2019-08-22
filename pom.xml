@@ -13,6 +13,7 @@
 		<module>spring-boot-autoconfiguration</module>
 		<module>spring-boot-custom-starter</module>
 		<module>spring-security-oauth2</module>
+		<module>spring-boot-jta</module>
 	</modules>
 
 	<dependencies>
