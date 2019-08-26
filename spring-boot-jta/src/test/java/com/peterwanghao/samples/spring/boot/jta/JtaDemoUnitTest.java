@@ -71,7 +71,7 @@ public class JtaDemoUnitTest {
 		assertThatThrownBy(() -> {
 			tellerService.executeTransfer("a0000002", "a0000001",
 					BigDecimal.valueOf(100000));
-		}).hasMessage("Insufficient fund.");
+		}).hasMessage("余额不足!");
 
 		assertThat(accountService.balanceOf("a0000001"))
 				.isEqualByComparingTo(BigDecimal.valueOf(1000));
@@ -106,7 +106,7 @@ public class JtaDemoUnitTest {
 		assertThatThrownBy(() -> {
 			tellerService.executeTransferProgrammaticTx("a0000002", "a0000001",
 					BigDecimal.valueOf(100000));
-		}).hasMessage("Insufficient fund.");
+		}).hasMessage("余额不足!");
 
 		assertThat(accountService.balanceOf("a0000001"))
 				.isEqualByComparingTo(BigDecimal.valueOf(1000));

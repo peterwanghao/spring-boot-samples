@@ -36,7 +36,7 @@ public class TellerService {
 		auditService.log(fromAccontId, toAccountId, amount);
 		BigDecimal balance = bankAccountService.balanceOf(fromAccontId);
 		if (balance.compareTo(BigDecimal.ZERO) < 0) {
-			throw new RuntimeException("Insufficient fund.");
+			throw new RuntimeException("余额不足!");
 		}
 	}
 
@@ -48,7 +48,7 @@ public class TellerService {
 		BigDecimal balance = bankAccountService.balanceOf(fromAccontId);
 		if (balance.compareTo(BigDecimal.ZERO) < 0) {
 			userTransaction.rollback();
-			throw new RuntimeException("Insufficient fund.");
+			throw new RuntimeException("余额不足!");
 		} else {
 			userTransaction.commit();
 		}
