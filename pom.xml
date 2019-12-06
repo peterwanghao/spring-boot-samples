@@ -14,6 +14,7 @@
 		<module>spring-boot-custom-starter</module>
 		<module>spring-security-oauth2</module>
 		<module>spring-boot-jta</module>
+		<module>spring-boot-dubbo-seata</module>
 	</modules>
 
 	<dependencies>
