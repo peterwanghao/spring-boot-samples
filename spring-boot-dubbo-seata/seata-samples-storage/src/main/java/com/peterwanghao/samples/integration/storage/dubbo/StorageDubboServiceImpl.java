@@ -10,6 +10,7 @@ import com.peterwanghao.samples.integration.common.response.ObjectResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+
 /**
  * @Author: heshouyou
  * @Description
